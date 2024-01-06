@@ -1,0 +1,137 @@
+.navigationContainer {
+    width: var(--fullwidth);
+    background-color: var(--primary-color);
+}
+
+.navWrapper {
+    width: var(--wrapper-width);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.logo span {
+    color: var(--white-variant);
+}
+
+.navWrapper nav {
+    width: var(--fullwidth);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.menulinks {
+    display: flex;
+    color: var(--white);
+}
+
+.menulinks ul {
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--white);
+    gap: 3.5rem;
+}
+
+a{
+    color: var(--white);
+    font-weight: 700;
+    text-align: center;
+}
+
+a:hover{
+    color: var(--secondary-color);
+    font-weight: 700;
+    transition: ease .2s ease-in-out;
+}
+
+.menulinks ul li {
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: ease .2s ease-in-out;
+}
+
+.activeLink {
+    color: var(--secondary-color);
+    font-weight: 900;
+    transition: ease .2s ease-in-out;
+}
+
+.mobilenav{
+    font-size: 1.7rem;
+    color: var(--white);
+}
+
+.mobileicon{
+    display: none;
+}
+
+
+@media screen and (min-width: 360px) and (max-width: 1024px) {
+
+    .navWrapper{
+        width: var(--fullwidth);
+    }
+    .mobileicon {
+        display: block;
+        padding: 0 2rem 0 0;
+    }
+
+    .menulinks{
+        position: absolute;
+        left: 0;
+        top: 4rem;
+        display: none;
+        flex-direction: column;
+        background-color: var(--primary-color);
+        padding: 2rem 1rem;
+        height: 100vh;
+    }
+
+    .menulinks ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .menulinks ul li{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--primary-color);
+        padding: .3rem;
+    }
+
+    .menulinks.visible {
+        display: flex;
+        /* Add your styling for the visible state */
+      }
+
+      button{
+        background-color: transparent;
+        outline: none;
+        border: none;
+      }
+}

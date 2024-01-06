@@ -4,9 +4,10 @@ import Navigation from './components/navigation'
 function App() {
   return (
     <div className="container">
+        <Navigation />
         <div className="mainWrapper">
            <>
-            <Navigation />
+            
            </>
         </div>
     </div>

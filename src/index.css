@@ -6,19 +6,36 @@
   text-decoration: none;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
+  list-style: none;
 }
 
 :root{
   --fullwidth: 100%;
   --wrapper-width: 80%;
   --mobile-width: 90%;
+  --secondary-color: #003612;
+  --primary-color: #5BBC3D;
+  --white-variant: #D9DBE7;
+  --white: #ffffff;
 }
 
-
+body{
+  background-color: var(--secondary-color);
+  overflow: hidden;
+}
 
 
 
 /* APP.JSX CSS STARTS HERE */
 
+.container{
+  width: var(--fullwidth);
+  background-color: var(--secondary-color);
+}
+
+.mainWrapper{
+  width: var(--wrapper-width);
+  margin-inline: auto;
+}
 
 /*APP.JSX CSS ENDS HERE*/
